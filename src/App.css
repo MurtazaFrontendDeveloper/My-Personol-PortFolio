@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/*
+npx @tailwindcss/cli -i ./src/App.css -o ./src/Master.css --watch
+*/
