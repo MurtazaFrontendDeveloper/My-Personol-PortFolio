@@ -1,0 +1,414 @@
+/* links */
+.mainul{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    position: relative;
+    &:nth-child(1){
+        >a{
+            color: white;
+        }
+    }
+    >a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: var(--color-secondary);
+        transition: 0.2s ease;
+        text-transform: uppercase;
+        &:hover{
+            color: var(--color-White);
+        }
+        >span{
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            right: 0;
+            top: 12px;
+        }
+        .Animation {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            right: -17px;
+            top: -5px;
+            border: 2px dashed var(--color-secondary);
+            animation: spin-slow 10s linear infinite;
+        }
+    }
+}
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* lg links */
+.Animationsm{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px dashed var(--color-secondary);
+    animation: spin-slow 10s linear infinite;   
+    left: -66px;
+    top: -5px;
+}
+
+
+/* <!-- responsive and non responsive --> */
+.responsive{
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--color-Black);
+    border: dashed 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:nth-of-type(1){
+        width: 130px;
+        color: var(--color-White);
+        background-color: var(--color-Black);
+    }
+    &:hover{
+        background-color: var(--color-Black);
+        color: var(--color-White);
+    }
+}
+
+/* Websites link and img */
+.Websites_Images {
+    margin-top: 20px;
+}
+
+.Websites_Images > a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* IMAGE */
+.Websites_Images > a > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* DIM IMAGE (FIXED) */
+.Websites_Images > a:hover img {
+    filter: brightness(60%);
+    transform: scale(1.05);
+}
+.Websites_Images > a:hover > span {
+    visibility: visible;
+    opacity: 1;
+    &:nth-of-type(2){
+        top: 20px;
+    }
+    &:nth-of-type(3){
+        bottom: 8px;
+    }
+}
+
+/* TEXT (hidden at start) */
+.info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    opacity: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.4s ease;
+    pointer-events: none;
+}
+
+/* TEXT ANIMATION */
+.Websites_Images > a:hover .info {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+
+/* black drop */
+.line {
+    position: relative;
+    overflow: hidden;
+}
+
+/* THE REAL LINE (VERY THIN + CLEAN) */
+.line::after {
+    content: "";
+    position: absolute;
+
+    right: -0.1px;              /* perfectly on border */
+    top: -30%;
+
+    width: 1px;            /* 🔥 ultra thin like image */
+    height: 80px;
+
+  /* subtle dark gradient like your reference */
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15),
+    black
+    );
+
+    border-radius: 999px;
+
+  /* softer + cleaner */
+    opacity: 0.7;
+
+  animation: scanVerySlow 12s linear infinite; /* 🔥 MUCH slower */
+}
+
+/* stagger effect (very subtle like premium sites) */
+.line:nth-child(1)::after { animation-delay: 0s; }
+.line:nth-child(4)::after { animation-delay: 2s; }
+.line:nth-child(2)::after { animation-delay: 4s; }
+.line:nth-child(3)::after { animation-delay: 6s; }
+
+@keyframes scanVerySlow {
+    0% {
+    top: -40%;
+    opacity: 0;
+    }
+
+    10% {
+    opacity: 0.8;
+    }
+
+    100% {
+    top: 120%;
+    opacity: 0;
+    }
+}
+
+/* smoth scrool */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+.sevices{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px dashed var(--color-secondary);
+    &:nth-of-type(4){
+        border: none;
+    }
+        .num1-4{
+            font-weight: bold;
+            color: transparent;
+        }
+        .short-text{
+            position: relative;
+            margin-block: 6px;
+            margin-top: 22px;
+            font-weight: bold;
+            >i{
+                font-size: 22px;
+                position: absolute;
+                top: -28px;
+                left: 0;
+            }
+        }
+}
+
+
+
+/* base */
+.reveal {
+    opacity: 0;
+    transition: opacity 0.9s ease, transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+}
+
+/* variants */
+.fade-up { transform: translateY(80px); }
+.fade-down { transform: translateY(-80px); }
+.left { transform: translateX(-120px); }
+.right { transform: translateX(120px); }
+.zoom { transform: scale(0.85); }
+
+
+
+
+
+
+
+
+
+
+
+/* Resue section */
+.two-secition{
+    width: 50%;
+    height: 100%;
+    border-left: 1px dashed var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 20px;
+    .dot{
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: var(--color-black);
+    }
+    .little-border{
+        width: 20px;
+        height:1px;
+        border-bottom: 1px dashed var(--color-secondary);
+    }
+    .icon{
+        font-size: 30px;
+    }
+    .date-time{
+        width: 120px;
+        height: 35px;
+        border-radius: 50px;
+        border: 1px dashed var(--color-secondary);
+        text-align: center;
+        align-content: center;
+        margin-block: 20px; 
+        margin-left: 5px;
+        color: var(--color-textSecondary);
+    }
+    div{
+        margin-bottom: 20px;
+        .t-h1{
+            font-weight: bold;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+
+/* 6th section */
+.img-a{
+    >figure{
+        overflow: hidden;
+        >img{
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            transition: 0.5s ease;
+            border-radius: 10px;
+            &:hover{
+                filter: blur(5px);
+                transform: scale(1.1);
+            }
+        }
+        >span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            border-radius: 30px;
+            padding: 8px;
+            padding-inline: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    >p{
+        margin-top:5px;
+    }
+    >a{
+        &:nth-of-type(1){
+            >h1{
+                margin-block: 20px;
+                font-weight: bold;
+                line-height: 1.2;
+                transition: 0.3s ease;
+                &:hover{
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                    text-decoration-thickness: 2px;
+                }
+            }
+        }
+        &:nth-of-type(2){
+            width: 92px;
+            height: 42px;
+            border: dashed 1px black;
+            border-radius: 20px;
+            overflow: hidden;
+            >figure{
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                transition: 0.3s ease;
+                &:hover{
+                    background-color: var(--color-Black);
+                    color: var(--color-White);
+                }
+            }
+        }
+    }
+}
+
+
+
+/* section 7 */
+.contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    >figure{
+        padding: 12px;
+        border: 1px dashed var(--color-secondary);
+        color: var(--color-secondary);
+        border-radius: 20px;
+        transition: 0.3s ease;
+        &:hover{
+            border: 1px dashed black;
+            color: var(--color-Black);
+        }
+    }
+}
