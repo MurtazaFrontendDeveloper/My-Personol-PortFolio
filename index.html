@@ -1,12 +1,847 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/Master.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murtaza Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="src/Master.css">
+  <link rel="stylesheet" href="src/Main.css">
 </head>
-<body>
-    
+
+<body class="bg-Background">
+
+  <!-- background -->
+<div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+
+  <div class="absolute inset-0 bg-Background"></div>
+
+  <!-- IMPORTANT: force real viewport width -->
+  <div class="absolute inset-0 flex w-full h-full">
+
+    <div class="flex-1 relative border-r border-secondary line"></div>
+    <div class="flex-1 relative border-r border-secondary line"></div>
+    <div class="flex-1 relative border-r border-secondary line"></div>
+    <div class="flex-1 relative border-r border-secondary line"></div>
+    <div class="flex-1 relative border-r border-secondary line hidden lg:flex"></div>
+
+  </div>
+
+</div>
+
+<!-- ===== SCROLL CONTAINER (THIS MOVES, NOT BODY) ===== -->
+<div class="container mx-auto flex relative">
+  <div class="container mx-auto flex relative">
+
+
+
+    <!-- Header -->
+    <header class="container w-full h-10 flex justify-end items-center px-4 absolute top-0">
+    <ul class="flex gap-5 text-[13px] text-Dark">
+      <li><a class="hover:underline" href="https://www.facebook.com/profile.php?id=61588655817143" target="_blank">FB</a></li>
+      <li><a class="hover:underline" href="https://x.com/MurtazaFrontDev" target="_blank">TW</a></li>
+      <li><a class="hover:underline" href="https://www.instagram.com/murtaza.frontweb.developer/" target="_blank">IG</a></li>
+      <li><a class="hover:underline" href="https://www.linkedin.com/in/murtaza-noori-19b371400" target="_blank">LN</a></li>
+    </ul>
+    <figure class="w-12 h-13 bg-Black ml-4 rounded-[7px] flex gap-1 justify-center items-center group ">
+      <span class="w-1 h-1 rounded-4xl block bg-White group-hover:-translate-x-0.1 group-hover:absolute transition-all duration-300"></span>
+      <span class="w-1 h-1 rounded-4xl block bg-White group-hover:w-3 group-hover:h-3 transition-all duration-300"></span>
+      <span class="w-1 h-1 rounded-4xl block bg-White group-hover:-translate-x-0.1 group-hover:absolute transition-all duration-300"></span>
+    </figure>
+      </header>
+
+
+
+      <!-- lg left side -->
+      <section class="hidden lg:flex relative lg:mt-35 lg:ml-15">
+        <figure class="w-[250px] h-[390px] bg-Black rounded-[10px] flex  sticky top-10 z-10">
+          <ul class="w-full h-full px-10 py-7 text-White flex flex-col text-[15px]">
+          <li class="mainul"><a href="#ABOUT-ME">About Me
+            <span></span>
+            <div class="Animation"></div>
+          </a></li>
+          <li class="mainul"><a href="#PORTFOLIO">Portfolio
+            <span></span>
+
+          </a></li>
+          <li class="mainul"><a href="#Services">Services
+            <span></span>
+
+          </a></li>
+          <li class="mainul"><a href="#Testimonial">Testimonial
+            <span></span>
+
+          </a></li>
+          <li class="mainul"><a href="#Resume">Resume
+            <span></span>
+
+          </a></li>
+          <li class="mainul"><a href="#Blog">Blog
+            <span></span>
+
+          </a></li>
+          <li class="mainul"><a href="#Contact">Contact
+            <span></span>
+
+          </a></li>
+        </ul>
+      </figure>
+      </section>
+
+
+
+      <!-- lg right side -->
+      <!-- all Sections -->
+      <section class="flex flex-col px-2 pt-12 lg:px-15 lg:flex">
+
+
+
+        <!-- Name -->
+      <h1 class="reveal fade-up delay-1 text-[clamp(24px,6vw,74px)] font-bold flex gap-4 lg:absolute lg:left-15 lg:top-5">
+          <span>Murtaza</span>
+          <span class="text-transparent [-webkit-text-stroke:2px_black]">Noori</span>
+      </h1>
+
+
+
+      <!-- Titles link -->
+      <figure class="container-fluid w-full h-15 rounded-[10px] mt-9 bg-Black flex items-center justify-center text-secondary gap-10 text-[18px] lg:hidden">
+        <span><a href="#ABOUT-ME">A
+          <div></div>
+        </a></span>
+        <span><a class="relative" href="#PORTFOLIO">P
+          <div class="Animationsm"></div>
+        </a></span>
+        <span><a href="#Services">S</a></span>
+        <span><a href="#Testimonial">T</a></span>
+        <span><a href="#Resume">R</a></span>
+        <span><a href="#Blog">B</a></span>
+        <span><a href="#Contact">C</a></span>
+      </figure>
+      <!-- Titles link on LG -->
+
+
+
+      <!-- section 1 ABOUT-ME -->
+      <section id="ABOUT-ME" class="overflow-hidden container-fluid w-full rounded-[10px] lg:flex lg:flex-wrap mt-12 lg:mt-23 bg-white p-5 font-primary">
+        <!-- img -->
+        <div class="xl:h-[58%] mt-5 xl:w-[220px] w-[300px]">
+          <figure class="w-[300px] h-[300px] xl:w-[220px] xl:h-[220px] relative z-100 rounded-[50%]">
+            <img class="object-cover w-full  h-full rounded-[50%]"
+              src="src/img/one-piece-character-3840x2160-15328.jpeg" alt="">
+              <!-- __Ask Teacher for help__ -->
+            <!-- <span class="block absolute left-10 bottom-5 w-40 h-10 bg-amber-200 flex items-center px-2 text-sm font-semibold">
+              <span id="type"></span>
+            </span> -->
+          </figure>
+        </div>
+
+
+        <!-- middle of section -->
+        <div class="ml-5 xl:ml-6  lg:ml-5 xl:w-[520px] ">
+          <span class="relative py-20 reveal left delay-1">
+            <h1 class="absolute inset-0 flex
+              text-3xl xl:text-5xl font-bold text-transparent [-webkit-text-stroke:1px_var(--color-secondary)]
+              select-none pointer-events-none">
+              ABOUT ME
+            </h1>
+            <h2 class="relative text-1xl font-semibold tracking-widest mt-5 lg:pt-6 pt-4">
+              / / ABOUT ME
+          </h2>
+        </span>
+
+
+        <span class="w-full mb-5 h-20 flex flex-col justify-center
+        font-bold reveal right delay-2">
+          <h2 class="text-3xl">Full-Stack Developer.</h2>
+          <h2>Turning ideas into interactive experiences</h2>
+        </span>
+
+
+        <!-- Middle of the section -->
+        <div class="w-full flex flex-wrap gap-4 group">
+          <figure class="w-50 h-10 border border-dashed hover:text-Black duration-300  border-secondary rounded-3xl flex justify-center gap-2 items-center px-3 whitespace-nowrap text-textSecondary reveal left delay-3 ">
+          <div class="flex items-center gap-2">
+          <span class="block w-[22px] h-[22px]">
+            <img class="w-full h-full object-contain" src="src/img/html5.png" alt="">
+          </span>
+          <h3>HTML5 & CSS3</h3>
+        </div>
+        <span id="percent1">(0%)</span>
+          </figure>
+          <figure class="w-40 h-10 border border-dashed hover:text-Black duration-300  border-secondary rounded-3xl flex justify-center  gap-2 items-center px-3 whitespace-nowrap text-textSecondary reveal right delay-3">
+        <span class="block w-[22px] h-[22px]">
+          <img class="w-full h-full object-contain" src="src/img/bootstrap.png" alt="">
+        </span>
+        <h3>Tailwind</h3>
+        <span id="percent2">(0%)</span>
+          </figure>
+          <figure class="w-40 h-10 border border-dashed hover:text-Black duration-300  border-secondary rounded-3xl flex justify-center  gap-2 items-center px-3 whitespace-nowrap text-textSecondary reveal left delay-3">
+        <span class="block w-[22px] h-[22px]">
+          <img class="w-full h-full object-contain" src="src/img/java-script.png" alt="">
+        </span>
+        <h3>JavaScript</h3>
+        <span id="percent3">(0%)</span>
+          </figure>
+      </div>
+
+
+
+      <span class="block w-full text-[19px] my-5 reveal right delay-4">
+        I help individuals and businesses turn their ideas into fast, responsive, and modern websites and web applications. I specialize in building clean user interfaces using HTML, React, and Next.js, with a strong focus on performance, scalability, and user experience.
+      </span>
+
+
+        </div>
+
+
+
+      <!-- End of the first section -->
+      <div class="w-full xl:flex ">
+        <figure class="w-full h-18 relative flex items-end reveal fade-up delay-1">
+          <h1 id="projects" class="text-transparent [-webkit-text-stroke:1.5px_black] text-6xl px-4">0</h1>
+          <span class="block text-[25px] font-bold absolute left-[58px] top-2"><i class="bi bi-plus"></i></span>
+          <p class="text-[17px] font-bold mb-2">Projects Built</p>
+        </figure>
+        <figure class="w-full h-18 my-2 relative flex items-end reveal fade-up dleay-2">
+          <h1 id="hours" class="text-transparent [-webkit-text-stroke:1.5px_black] text-6xl px-4">0</h1>
+          <span class="block text-[18px] font-bold absolute left-[65px] top-2">K</i></span>
+          <p class="text-[17px] font-bold mb-2">Hours of Learning</p>
+        </figure>
+        <figure class="w-full h-18 relative flex items-end reveal fade-up delay-3">
+          <h1 id="tech" class="text-transparent [-webkit-text-stroke:1.5px_black] text-6xl px-4">0</h1>
+          <span class="block text-[25px] font-bold absolute lg:hidden xl:flex left-[58px] top-2"><i class="bi bi-plus"></i></span>
+          <p class="text-[17px] font-bold mb-2">Core Technologies</p>
+        </figure>
+      </div>
+      </section>
+
+
+
+      <!-- End of section 1 -->
+
+      <!-- section 2 PORTFOLIO -->
+      <section id="PORTFOLIO" class="container-fluid w-full bg-white mt-5 p-6 ">
+
+
+        <!-- PORTFOLIO Name -->
+        <span class="relative py-20 reveal zoom delay-1">
+          <h1 class="absolute inset-0 flex
+            text-5xl font-bold text-transparent [-webkit-text-stroke:1px_var(--color-secondary)]
+            select-none pointer-events-none">
+            PORTFOLIO
+          </h1>
+          <h2 class="relative text-1xl font-semibold tracking-widest mt-3 pt-7">
+            / / PORTFOLIO
+          </h2>
+        </span>
+
+
+        <!-- Latest Projects -->
+        <figure class="w-full my-7 lg:w-[75%] xl:w-[65%] reveal zoom delay-2">
+          <h1 class="mb-2 text-3xl font-bold">My Latest Projects,</h1>
+          <p>I have built four static websites using HTML and CSS to strengthen my frontend development skills. These projects focus on layout design, structure, and UI styling without responsiveness. I will be upgrading them to fully responsive versions soon and continuously improving my portfolio.</p>
+        </figure>
+
+
+        <!-- responsive and non responsive -->
+        <figure class="flex h-14 gap-3 lg:items-end">
+          <span class="responsive reveal zoom delay-1">
+            Non Responsive
+          </span>
+          <span class="responsive reveal zoom delay-2">
+            Responsive
+          </span>
+          <span class="responsive reveal zoom delay-3">
+            Full Frontend
+          </span>
+        </figure>
+
+
+        <!-- Websites link and img -->
+        <div class="xl:flex xl:gap-5 flex-wrap">
+          <figure class="Websites_Images w-fit h-[300px] md:h-[550px] lg:h-[350px] xl:w-[380px]">
+            <a class="relative block h-full" href="https://murtazafrontenddeveloper.github.io/My-First-Website/" target="_blank">
+              <img src="src/img/1st-Website/First-website.png" alt="">
+              <span class="info">Pet Care Website</span>
+              <!-- borderd info -->
+              <span class="w-[130px] h-[35px] rounded-3xl bg-White absolute left-2 -top-10 invisible opacity-0 transition-all duration-300 flex justify-center items-center">
+                Static Website
+              </span>
+              <span class="w-[130px] h-[35px] rounded-3xl bg-white absolute right-2 -bottom-5 invisible opacity-0 transition-all duration-300 flex justify-center items-center" >
+                Non-Responsive
+              </span>
+            </a>
+          </figure>
+          <figure class="Websites_Images w-fit h-[300px] md:h-[550px] lg:h-[350px] xl:w-[380px]">
+            <a class="relative block h-full" href="https://murtazafrontenddeveloper.github.io/Cake_shop/" target="_blank">
+              <img src="src/img/1st-Website/Murtaza-Cake-Shop.png" alt="">
+              <span class="info">Cake Shop Website</span>
+              <!-- borderd info -->
+              <span class="w-[130px] h-[35px] rounded-3xl bg-White absolute left-2 -top-10 invisible opacity-0 transition-all duration-300 flex justify-center items-center">
+                Static Website
+              </span>
+              <span class="w-[130px] h-[35px] rounded-3xl bg-white absolute right-2 -bottom-5 invisible opacity-0 transition-all duration-300 flex justify-center items-center" >
+                Non-Responsive
+              </span>
+            </a>
+          </figure>
+          <figure class="Websites_Images w-fit h-[300px] md:h-[550px] lg:h-[350px] xl:w-[380px]">
+            <a class="relative block h-full" href="https://murtazafrontenddeveloper.github.io/My-Third-Website/" target="_blank">
+              <img src="src/img/1st-Website/Third-website.png" alt="">
+              <span class="info">News & Law Website</span>
+              <!-- borderd info -->
+              <span class="w-[130px] h-[35px] rounded-3xl bg-White absolute left-2 -top-10 invisible opacity-0 transition-all duration-300 flex justify-center items-center">
+                Static Website
+              </span>
+              <span class="w-[130px] h-[35px] rounded-3xl bg-white absolute right-2 -bottom-5 invisible opacity-0 transition-all duration-300 flex justify-center items-center" >
+                Non-Responsive
+              </span>
+            </a>
+          </figure>
+          <figure class="Websites_Images w-fit h-[300px] md:h-[550px] lg:h-[350px] xl:w-[380px]">
+            <a class="relative block h-full" href="https://murtazafrontenddeveloper.github.io/My-Fourth-Website/" target="_blank">
+              <img src="src/img/1st-Website/Fourth-website.png" alt="">
+              <span class="info">Portfolio Website</span>
+              <!-- borderd info -->
+              <span class="w-[130px] h-[35px] rounded-3xl bg-White absolute left-2 -top-10 invisible opacity-0 transition-all duration-300 flex justify-center items-center">
+                Static Website
+              </span>
+              <span class="w-[130px] h-[35px] rounded-3xl bg-white absolute right-2 -bottom-5 invisible opacity-0 transition-all duration-300 flex justify-center items-center" >
+                Non-Responsive
+              </span>
+            </a>
+          </figure>
+        </div>
+
+
+
+      </section>
+      <!-- End of section 2 -->
+      
+      
+      <!-- section 3 Services -->
+        
+      <section id="Services" class="container-fluid w-full bg-white mt-5 p-6 ">
+
+        <!-- Services Name -->
+        <span class="relative py-20 reveal fade-up delay-1">
+          <h1 class="absolute inset-0 flex
+            text-5xl font-bold text-transparent [-webkit-text-stroke:1px_var(--color-secondary)]
+            select-none pointer-events-none">
+            SERVICES
+          </h1>
+          <h2 class="relative text-1xl font-semibold tracking-widest mt-3 pt-7">
+            / / SERVICES
+          </h2>
+        </span>
+
+
+        <!-- What i do -->
+        <figure class="my-5 reveal fade-up delay-1">
+          <h1 class="text-4xl font-bold ">What i do</h1>
+          <p class="mt-2 text-[18px] xl:w-[500px]">I build modern, high-performance web applications that are fast, scalable, and designed to deliver real results.</p>
+        </figure>
+        <div class="my-5">
+          <figure class="sevices flex flex-col justify-center xl:flex-row xl:justify-between xl:items-center reveal fade-up delay-2">
+            <span class="num1-4 text-[36px] xl:text-6xl [-webkit-text-stroke:2px_black]">01</span>
+            <span class="short-text xl:flex-1 xl:ml-7"><i class="bi bi-code-slash"></i>
+              Full-Stack Web Development
+            </span>
+            <span class="w-[400px]">I develop complete, high-performance web applications from concept to deployment, handling both front-end and back-end. Every project is built with clean architecture, scalability, and seamless integration in mind.</span>
+          </figure>
+          <figure class="sevices flex flex-col justify-center xl:flex-row xl:justify-between xl:items-center reveal fade-up delay-3">
+            <span class="num1-4 text-[36px] xl:text-6xl [-webkit-text-stroke:2px_black]">02</span>
+            <span class="short-text xl:flex-1 xl:ml-7"><i class="bi bi-window"></i>
+              Front-End Development
+            </span>
+            <span class="w-[400px]">I craft modern, responsive user interfaces that are visually clean, fast, and intuitive. My focus is on delivering smooth user experiences that perform flawlessly across all devices.</span>
+          </figure>
+          <figure class="sevices flex flex-col justify-center xl:flex-row xl:justify-between xl:items-center reveal fade-up delay-4">
+            <span class="num1-4 text-[36px] xl:text-6xl [-webkit-text-stroke:2px_black]">03</span>
+            <span class="short-text xl:flex-1 xl:ml-7"><i class="bi bi-hdd-network"></i>
+              Back-End Development
+            </span>
+            <span class="w-[400px]">I build secure, scalable back-end systems that power your application — from data management and APIs to authentication and business logic, ensuring reliability and performance at every level.</span>
+          </figure>
+          <figure class="sevices flex flex-col justify-center xl:flex-row xl:justify-between xl:items-center reveal fade-up delay-5">
+            <span class="num1-4 text-[36px] xl:text-6xl [-webkit-text-stroke:2px_black]">04</span>
+            <span class="short-text xl:flex-1 xl:ml-7"><i class="bi bi-kanban"></i>
+              Web Applications
+            </span>
+            <span class="w-[400px]">I create dynamic, real-world web applications such as dashboards, tools, and platforms designed to solve problems, streamline workflows, and deliver meaningful user interaction.</span>
+          </figure>
+        </div>
+      </section>
+
+
+      <!-- End of section 3 -->
+
+
+      <!-- section 4 Testimonial -->
+      <section id="Testimonial" class="container-fluid w-full min-w-0 overflow-hidden bg-white mt-5 p-6">
+
+      <!-- Testimonial Name -->
+        <span class="relative py-20 reveal fade-up delay-1 uppercase">
+          <h1 class="absolute inset-0 flex
+            text-5xl font-bold text-transparent [-webkit-text-stroke:1px_var(--color-secondary)]
+            select-none pointer-events-none">
+            TESTINONIAL
+          </h1>
+          <h2 class="relative text-1xl font-semibold tracking-widest mt-3 pt-4 xl:pt-6">
+            / / What People say
+          </h2>
+        </span>
+
+        <!-- moving divs -->
+        <div id="slider" class="w-full flex items-center justify-center mt-10 gap-12">
+          <figure class="w-fit xl:w-[50%] reveal left delay-2">
+
+
+            <!-- star -->
+            <span class="flex gap-1 text-yellow-400 relative">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+
+            <!-- comment -->
+            <p class="my-5">
+              “A highly skilled developer with a strong understanding of modern web standards. The work delivered was clean, fast, and aligned perfectly with our brand vision.”
+            </p>
+
+
+            <!-- bottom -->
+            <div class="flex gap-3 mt-5">
+              <figure class="w-20 h-20 rounded-[50%] bg-amber-400">
+                <img class="w-full h-full object-cover rounded-[50%]" src="src/img/Ahmad.jpeg" alt="">
+              </figure>
+              <span class="flex flex-col justify-center">
+                <h1 class="font-bold">Ahmad</h1>
+                <p>Web Developer</p>
+              </span>
+            </div>
+          </figure>
+
+
+
+          <!-- 2nd figure -->
+          <figure class="w-full xl:w-[50%] hidden xl:block reveal right delay-3">
+
+
+            <!-- star -->
+            <span class="flex gap-1 text-yellow-400 relative">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+
+            <!-- comment -->
+            <p class="my-5">
+              “A highly skilled developer with a strong understanding of modern web standards. The work delivered was clean, fast, and aligned perfectly with our brand vision.”
+            </p>
+
+
+            <!-- bottom -->
+            <div class="flex gap-3 mt-5">
+              <figure class="w-20 h-20 rounded-[50%] bg-amber-400">
+                <img class="w-full h-full object-cover rounded-[50%]" src="src/img/Ahmad.jpeg" alt="">
+              </figure>
+              <span class="flex flex-col justify-center">
+                <h1 class="font-bold">Ahmad</h1>
+                <p>Web Developer</p>
+              </span>
+            </div>
+          </figure>
+
+
+          <!-- 3rd figure -->
+        </div>
+
+
+      </section>
+      <!-- End of section 4 -->
+
+      <!-- section 5 Resume -->
+      <section id="Resume" class="container-fluid w-full bg-white mt-5 p-6 overflow-hidden">
+
+
+        <!-- Resume Name -->
+        <span class="relative py-20 reveal delay-1 uppercase">
+          <h1 class="absolute inset-0 flex
+            text-5xl font-bold text-transparent [-webkit-text-stroke:1px_var(--color-secondary)]
+            select-none pointer-events-none">
+            Resume
+          </h1>
+          <h2 class="relative text-1xl font-semibold tracking-widest mt-3 pt-6">
+            / / Resume
+          </h2>
+        </span>
+
+        <!-- Education & Experience -->
+        <figure class="w-full my-5 reveal right delay-1">
+          <h1 class="my-3">Education & Experience</h1>
+          <p>Experience building responsive, scalable web applications with modern web technologies.</p>
+        </figure>
+        
+        <!-- the resume itself -->
+        <div class="xl:flex"> 
+          <section class="two-secition w-full">
+
+
+            
+            <!-- the black dot -->
+            <span class="dot absolute top-[77.5px] -left-[3.1px]"></span>
+
+            <!-- the little border -->
+            <span class="little-border absolute top-[80px] left-[3.1px]"></span>
+
+
+          <!-- icon -->
+            <span class="icon">
+            <i class="bi bi-mortarboard"></i>
+            </span>
+            <!-- the main sruf -->
+            <figure class="date-time">
+            <h1>2025 - 2026</h1>
+            </figure>
+
+          <!-- 1st text -->
+            <div class="whitespace-nowrap">
+            <h1 class="t-h1">Frontend Development</h1>
+            <p>@ Self Learning,</p>
+            <p>Building Modern Website</p>
+            <p>using HTML,CSS,Tailwing,js,React,next.js.</p>
+            </div>
+          
+            
+          
+            <!-- the 2nd black dot -->
+          <span class="dot absolute top-[291px] -left-[3.1px]"></span>
+
+          <!-- the 2nd little border -->
+          <span class="little-border absolute top-[293px] left-[3.1px]"></span>
+
+          <figure class="date-time">
+            <h1>2025 - 2026</h1>
+          </figure>
+
+          <!-- 2nd text -->
+          <div class="whitespace-nowrap">
+            <h1 class="t-h1 whitespace-nowrap">Advanced CSS & Layout Practice</h1>
+            <p>@ Personal Projects,</p>
+            <p class="secend-p">Creating real-world layouts and sections,</p>
+            <p>Practicing pixel-perfect design.</p>
+          </div>
+        
+        
+        
+        <!-- bottom left -->
+        
+          <span class="dot absolute bottom-[195px] -left-[3.1px]"></span>
+          <!-- the 3rd little border -->
+          <span class="little-border absolute bottom-[200px] left-[3.1px]"></span>
+
+          <figure class="date-time">
+            <h1>2025 - 2026</h1>
+          </figure>
+
+          <!-- 3rd text -->
+          <div>
+            <h1 class="t-h1 w-[300px]">Programming Foundations</h1>
+            <p>@ Slef Study,</p>
+            <p class="w-[250px]">Understanding how  website works, started coding journey,</p>
+            <p class="w-[250px]">Built Modern projects and layouts.</p>
+          </div>
+        
+
+        </section>
+          <section class="two-secition w-full">
+
+          <!-- top right -->
+          <span class="dot absolute top-[77.5px] -left-[3.1px]"></span>
+
+          <!-- the little border -->
+          <span class="little-border absolute top-[80px] left-[3.1px]"></span>
+
+
+          <!-- icon -->
+          <span class="icon">
+            <i class="bi bi-briefcase"></i>
+          </span>
+          <!-- the main sruf -->
+          <figure class="date-time">
+            <h1>2025 - 2026</h1>
+          </figure>
+
+          <!-- 1st text -->
+          <div>
+            <h1 class="t-h1 w-[300px]">Frontend Developer</h1>
+            <p>@ Personal Portfolio,</p>
+            <p class="secend-p whitespace-nowrap">Designed and built personal portfolio website.</p>
+            <p class="whitespace-nowrap">Focused on responsiveness and modern UI</p>
+          </div>
+
+
+
+
+            <span class="dot absolute top-[291px] -left-[3.1px]"></span>
+
+          <!-- the 2nd little border -->
+          <span class="little-border absolute top-[293px] left-[3.1px]"></span>
+
+          <figure class="date-time">
+            <h1>2025 - 2026</h1>
+          </figure>
+
+          <!-- 2nd text -->
+          <div class="whitespace-nowrap">
+            <h1 class="t-h1 whitespace-nowrap">Website Recreation Projects</h1>
+            <p>@ Practice Work,</p>
+            <p>Rebuilt real website for learning.</p>
+            <p>Improved UI/UX understanding</p>
+          </div>
+
+
+          <!-- bottom right -->
+            <!-- the 3rd black dot -->
+          <span class="dot absolute bottom-[195px] -left-[3.1px]"></span>
+          <!-- the 3rd little border -->
+
+
+          <span class="little-border absolute bottom-[200px] left-[3.1px]"></span>
+
+          <figure class="date-time">
+            <h1>2025 - 2026</h1>
+          </figure>
+
+          <!-- 3rd text -->
+          <div class="whitespace-nowrap">
+            <h1 class="t-h1 w-[300px]">Freelancer Web Developer</h1>
+            <p>@ Independent,</p>
+            <p>Preparing to work with real Clints</p>
+            <p>Building websites for any kink of businesses</p>
+            <p>Focus on delivering modern web solution</p>
+          </div>
+
+        </section>
+        </div>
+
+      </section>
+
+      <!-- section blog -->
+      <section id="Blog" class="container-fluid w-full bg-white mt-5 p-6 ">
+
+        <!-- Blog the name -->
+        <span class="relative py-20 reveal delay-1 uppercase">
+          <h1 class="absolute inset-0 flex
+            text-5xl font-bold text-transparent [-webkit-text-stroke:1px_var(--color-secondary)]
+            select-none pointer-events-none">
+            Blog
+          </h1>
+          <h2 class="relative text-1xl font-semibold tracking-widest mt-3 pt-3">
+            / / Blog
+          </h2>
+        </span>
+        
+        <!-- blog info -->
+        <figure class="my-5">
+          <h1 class="font-bold text-3xl my-2">Latest Blog Posts</h1>
+          <p>Sharing my journey as a full-stack developer, including projects, bugs, and what I learn while building real applications.</p>
+        </figure>
+
+        <!-- blogs -->
+        <!-- 1st -->
+        <div class="w-full flex flex-col xl:gap-4 xl:flex-row my-10">
+          <!-- img -->
+          <a class="img-a w-full h-full relative xl:w-[70%]  xl:h-full" href="https://murtazafrontenddeveloper.github.io/My-First-Website/" target="_blank">
+            <figure>
+            <img src="src/img/1st-Website/First-website.png" alt="">
+            <span class="pointer-events-none">
+              Experience
+            </span>
+          </figure>
+          </a>
+          <!-- texts -->
+          <span class="texts">
+            <p>Posted on Aug 28</p>
+            <a target="_blank" href="https://murtazafrontenddeveloper.github.io/My-First-Website/">
+              <h1 class="text-2xl">Building My First Website from Scratch</h1>
+            </a>
+            <a class="" href="">
+              <figure>ReadMe</figure>
+            </a>
+          </span>
+        </div>
+
+        <!-- 2nd -->
+        <div class="w-full flex flex-col xl:gap-4 xl:flex-row my-10"> 
+          <!-- img -->
+          <a class="img-a w-full h-full relative xl:w-[70%]  xl:h-full" href="https://murtazafrontenddeveloper.github.io/Cake_shop/" target="_blank">
+            <figure>
+            <img src="src/img/1st-Website/Murtaza-Cake-Shop.png" alt="">
+            <span class="pointer-events-none">
+              Experience
+            </span>
+          </figure>
+          </a>
+          <!-- texts -->
+          <span class="texts">
+            <p>Posted on june 7</p>
+            <a target="_blank" href="https://murtazafrontenddeveloper.github.io/Cake_shop/">
+              <h1 class="text-2xl">Fixing Layout & Issues in my secend web Design</h1>
+            </a>
+            <a class="" href="">
+              <figure>ReadMe</figure>
+            </a>
+          </span>
+        </div>
+
+        <!-- 3rd -->
+
+        <div class="w-full flex flex-col xl:gap-4 xl:flex-row my-10">
+          <!-- img -->
+          <a class="img-a w-full h-full relative xl:w-[70%]" href="https://murtazafrontenddeveloper.github.io/My-Third-Website/" target="_blank">
+            <figure>
+            <img src="src/img/1st-Website/Third-website.png" alt="">
+            <span class="pointer-events-none">
+              Experience
+            </span>
+          </figure>
+          </a>
+          <!-- texts -->
+          <span class="texts">
+            <p>Posted on Aug 28</p>
+            <a target="_blank" href="https://murtazafrontenddeveloper.github.io/My-Third-Website/">
+              <h1>This Was the Hardest UI I’ve Ever Built with HTML & CSS — Here’s How I Did It</h1>
+            </a>
+            <a class="" href="">
+              <figure>ReadMe</figure>
+            </a>
+          </span>
+        </div>
+
+        <!-- 4th -->
+        <div class="w-full flex flex-col xl:gap-4 xl:flex-row my-10"> 
+          <!-- img -->
+          <a class="img-a w-full h-full relative xl:w-[70%]  xl:h-full" href="https://murtazafrontenddeveloper.github.io/My-Fourth-Website/" target="_blank">
+            <figure>
+            <img src="src/img/1st-Website/Fourth-website.png" alt="">
+            <span class="pointer-events-none">
+              Experience
+            </span>
+          </figure>
+          </a>
+          <!-- texts -->
+          <span class="texts">
+            <p>Posted on Aug 28</p>
+            <a target="_blank" href="https://murtazafrontenddeveloper.github.io/My-Fourth-Website/">
+              <h1>Building My First Website from Scratch</h1>
+            </a>
+            <a class="" href="">
+              <figure>ReadMe</figure>
+            </a>
+          </span>
+        </div>
+
+
+      </search>
+      
+
+    </section>
+
+
+      <!-- section contact -->
+      <section id="Contact" class="container-fluid w-full bg-white mt-5 p-6 ">
+
+        <!-- contact nane -->
+        <span class="relative py-20 reveal delay-1 uppercase">
+          <h1 class="absolute inset-0 flex
+            text-5xl font-bold text-transparent [-webkit-text-stroke:1px_var(--color-secondary)]
+            select-none pointer-events-none">
+            contact
+          </h1>
+          <h2 class="relative text-1xl font-semibold tracking-widest mt-3 pt-3">
+            / / contact
+          </h2>
+        </span>
+
+        <div class="my-5">
+          <h1 class="font-bold text-3xl">Let's Connect</h1>
+          <p class="my-2 xl:w-[500px]">I’m always open to discussing new projects, creative ideas, or opportunities to build something meaningful together.</p>
+        </div>
+        <!-- contacts info -->
+        <div class="contact flex flex-wrap gap-2 w-full">
+          <figure class="p-3 border border-dashed rounded-3xl">
+            <h1>Number:+93-783615732</h1>
+          </figure>
+          <figure class="p-3 border border-dashed rounded-3xl">
+            E:Murtaza.Frontweb.developer@gmail.com
+          </figure>
+          <figure class="p-3 border border-dashed rounded-3xl">
+            Address:Kabul,Afghanistan,lese-maryam-st 8
+          </figure>
+        </div>
+
+
+
+
+        <!-- inputs -->
+        <form class="max-w-2xl mt-5 space-y-4">
+
+        <!-- Name + Email Row -->
+        <div class="flex flex-col md:flex-row gap-4">
+        
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full md:w-[60%] px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-black"
+          />
+        
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full md:w-[40%] px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-black"
+          />
+        
+        </div>
+      
+        <!-- Subject -->
+        <input
+          type="text"
+          placeholder="Subject"
+          class="w-full px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-black"
+        />
+      
+        <!-- Message -->
+        <textarea
+          rows="6"
+          placeholder="Your Message"
+          class="w-full px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-black resize-none"
+        ></textarea>
+      
+        <!-- Button -->
+        <button
+          type="submit"
+          class="w-full bg-black text-white py-3 rounded-lg hover:opacity-80 transition"
+        >
+          Send Message
+        </button>
+      
+      </form>
+
+      </section>
+
+  </div>
+  </div>
+</div>
+
 </body>
+<script src="src/main.js"></script>
 </html>

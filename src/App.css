@@ -3,3 +3,22 @@
 /*
 npx @tailwindcss/cli -i ./src/App.css -o ./src/Master.css --watch
 */
+@font-face {
+    font-family: "MyFont";
+    src: url("./font/Helvetica.ttf") format("truetype");
+}
+
+@theme {
+    --color-primary: #F2F5F8;
+    --color-secondary: #CCCCCC;
+    --color-textSecondary:#838485;
+    --color-Background:#F2F5F8;
+    --color-Black:#000000;
+    --color-White:#FFFFFF;
+    --color-Dark:#181818;
+    --font-primary: "Helvetica", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
